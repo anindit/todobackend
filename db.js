@@ -17,7 +17,7 @@ connection.connect(error => {
 
 const mongoose = require('mongoose');
 const uri = process.env.ATLAS_URI;
-mongoose.connect('mongodb+srv://ani:ani@cluster0.blo0u.mongodb.net/todo?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true}
+mongoose.connect('mongodb+srv://**:**@cluster0.blo0u.mongodb.net/dbname?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true}
 );
 const connection = mongoose.connection;
 connection.once('open', () => {
